@@ -1,6 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public  class PlayerMovements : MonoBehaviour
@@ -13,11 +10,17 @@ public  class PlayerMovements : MonoBehaviour
     public LayerMask groundLayer;
     [SerializeField] private float MovementSpeed;
     private bool doubleJump;
+    public LayerMask wallLayer;
 
     private bool isTouchingWall;
     public Transform wallCheck;
     private bool wallSliding;
     public float wallSlidingSpeed;
+
+    private bool wallJumping;
+    public float xWallForce;
+    public float yWallForce;
+    public float wallJumpTime;
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -40,24 +43,29 @@ public  class PlayerMovements : MonoBehaviour
                 jumpForce = jumpForce;
             }
             
+            
+            
+            
         }
         
         
 
-        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, groundLayer);
+       // isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, groundLayer);
     }
 
     private void FixedUpdate()
     {
+      
         
+        
+        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
         var movement = Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-
-        if (!Mathf.Approximately(0, movement))
-            transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
+        
+        
         
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        if (isTouchingWall == true && isGrounded == false && movement != 0)
+        if (isTouchingWall && isGrounded == false && movement != 0)
         {
             wallSliding = true;
         }
@@ -68,12 +76,37 @@ public  class PlayerMovements : MonoBehaviour
 
         if (wallSliding)
         {
-            rb.velocity = new Vector2(rb.velocity.x, Mathf.Clamp(rb.velocity.y, -wallSlidingSpeed, float.MaxValue));
+            var velocity = rb.velocity;
+            rb.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
-    }
 
+        if (Input.GetKeyDown(KeyCode.Space) && wallSliding)
+        {
+            wallJumping = true;
+            Invoke(nameof(SetWallJumpingToFalse), wallJumpTime);
+        }
+
+        if (wallJumping)
+        {
+            rb.velocity = new Vector2(xWallForce * -movement, yWallForce);
+        }
+        
+        
+        //flip player 
+        if (!Mathf.Approximately(0, movement))
+            transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
+    }
+    
+
+    //Enkelt Hoppscript
+    
     void Jump()
     {
         rb.velocity = Vector2.up * jumpForce;
+    }
+
+    void SetWallJumpingToFalse()
+    {
+        wallJumping = false;
     }
 }
