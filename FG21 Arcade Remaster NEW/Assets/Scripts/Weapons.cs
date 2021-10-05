@@ -4,15 +4,18 @@ using UnityEngine;
 
 public class Weapons : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public Transform fireDirection;
+    public GameObject bulletPrefab;
 
-    // Update is called once per frame
+    
     void Update()
     {
-        
+        if (Input.GetButtonDown("Fire1"))
+            Shoot();
+    }
+
+    void Shoot()
+    {
+        Instantiate(bulletPrefab, fireDirection.position, fireDirection.rotation);
     }
 }
