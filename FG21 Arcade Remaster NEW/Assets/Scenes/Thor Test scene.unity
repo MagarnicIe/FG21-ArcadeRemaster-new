@@ -245,8 +245,14 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 8
   MovementSpeed: 10
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 0
   wallCheck: {fileID: 311141448}
   wallSlidingSpeed: 3
+  xWallForce: 0
+  yWallForce: 0
+  wallJumpTime: 0
 --- !u!50 &311141446
 Rigidbody2D:
   serializedVersion: 4
