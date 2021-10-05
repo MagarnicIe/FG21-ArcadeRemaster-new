@@ -29,6 +29,7 @@ ExportedObj/
 # Unity3D generated meta files
 *.pidb.meta
 *.pdb.meta
+EditorUserSettings.asset
 
 # Unity3D Generated File On Crash Reports
 sysinfo.txt
@@ -37,3 +38,4 @@ sysinfo.txt
 *.apk
 *.unitypackage
 *.log
+FG21 Arcade Remaster NEW/UserSettings/EditorUserSettings.asset
