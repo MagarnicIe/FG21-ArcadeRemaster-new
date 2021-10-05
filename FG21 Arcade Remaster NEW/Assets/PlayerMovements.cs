@@ -42,10 +42,16 @@ public  class PlayerMovements : MonoBehaviour
                 doubleJump = false;
                 jumpForce = jumpForce;
             }
+
+            if (isTouchingWall)
+            {
+                doubleJump = true;
+            }
             
-            
-            
-            
+
+
+
+
         }
         
         
@@ -80,16 +86,16 @@ public  class PlayerMovements : MonoBehaviour
             rb.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -wallSlidingSpeed, float.MaxValue));
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && wallSliding)
-        {
-            wallJumping = true;
-            Invoke(nameof(SetWallJumpingToFalse), wallJumpTime);
-        }
+      // if (Input.GetKeyDown(KeyCode.UpArrow) && wallSliding != true)
+      // {
+      //     wallJumping = true;
+      //     Invoke(nameof(SetWallJumpingToFalse), wallJumpTime);
+      // }
 
-        if (wallJumping)
-        {
-            rb.velocity = new Vector2(xWallForce * -movement, yWallForce);
-        }
+      // if (wallJumping)
+      // {
+      //     rb.velocity = new Vector2(xWallForce * -movement, yWallForce);
+      // }
         
         
         //flip player 
@@ -104,9 +110,5 @@ public  class PlayerMovements : MonoBehaviour
     {
         rb.velocity = Vector2.up * jumpForce;
     }
-
-    void SetWallJumpingToFalse()
-    {
-        wallJumping = false;
-    }
+    
 }
