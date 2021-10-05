@@ -243,7 +243,7 @@ GameObject:
   - component: {fileID: 484780614}
   - component: {fileID: 484780613}
   - component: {fileID: 484780612}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -597,15 +597,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eeb0bf9f6ccb14446ae23db624d42cfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jumpForce: 7
+  jumpForce: 5
   checkRadius: 0.5
   groundCheck: {fileID: 2131857388}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
   MovementSpeed: 5
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
   wallCheck: {fileID: 1832134254}
-  wallSlidingSpeed: 4
+  wallSlidingSpeed: 2
+  xWallForce: 3
+  yWallForce: 3
+  wallJumpTime: 1
 --- !u!1 &1228101411
 GameObject:
   m_ObjectHideFlags: 0
@@ -617,7 +623,7 @@ GameObject:
   - component: {fileID: 1228101414}
   - component: {fileID: 1228101413}
   - component: {fileID: 1228101412}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -821,7 +827,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832134253}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.27, y: 0.136, z: 0}
+  m_LocalPosition: {x: 1.9, y: 0.31, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 826719063}
@@ -880,7 +886,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 6.418205
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
