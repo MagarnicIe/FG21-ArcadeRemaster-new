@@ -108,6 +108,18 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
@@ -117,8 +129,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -136,10 +148,10 @@ TextureImporter:
       name: Player Beam In_1
       rect:
         serializedVersion: 2
-        x: 100
+        x: 200
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -157,10 +169,10 @@ TextureImporter:
       name: Player Beam In_2
       rect:
         serializedVersion: 2
-        x: 200
+        x: 400
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -178,10 +190,10 @@ TextureImporter:
       name: Player Beam In_3
       rect:
         serializedVersion: 2
-        x: 300
+        x: 600
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -199,10 +211,10 @@ TextureImporter:
       name: Player Beam In_4
       rect:
         serializedVersion: 2
-        x: 400
+        x: 800
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -220,10 +232,10 @@ TextureImporter:
       name: Player Beam In_5
       rect:
         serializedVersion: 2
-        x: 500
+        x: 1000
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -241,10 +253,10 @@ TextureImporter:
       name: Player Beam In_6
       rect:
         serializedVersion: 2
-        x: 600
+        x: 1200
         y: 0
-        width: 100
-        height: 200
+        width: 200
+        height: 400
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
