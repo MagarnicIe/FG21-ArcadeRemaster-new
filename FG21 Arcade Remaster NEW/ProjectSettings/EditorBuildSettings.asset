@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Master Scene.unity
     guid: fd67d3f4ccbf43645b624623f98428c6
+  - enabled: 1
+    path: Assets/Scenes/JesperScene.unity
+    guid: 9852200fdc5506b4ebb56d3b1d4f07fd
   m_configObjects: {}
