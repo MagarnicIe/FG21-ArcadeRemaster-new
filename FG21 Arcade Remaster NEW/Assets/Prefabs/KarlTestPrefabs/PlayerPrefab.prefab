@@ -12,11 +12,12 @@ GameObject:
   - component: {fileID: 7920937206356463511}
   - component: {fileID: 7920937206356463512}
   - component: {fileID: 7920937206356463513}
-  - component: {fileID: 7920937206356463515}
   - component: {fileID: 7920937206356463508}
   - component: {fileID: 7515124130024869593}
+  - component: {fileID: -9005733364474046159}
+  - component: {fileID: 8964141943813646128}
   m_Layer: 8
-  m_Name: Player
+  m_Name: PlayerPrefab
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -138,33 +139,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &7920937206356463515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7920937206356463509}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: eeb0bf9f6ccb14446ae23db624d42cfe, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  jumpForce: 5
-  checkRadius: 0.5
-  groundCheck: {fileID: 7920937207401708333}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 8
-  MovementSpeed: 5
-  wallLayer:
-    serializedVersion: 2
-    m_Bits: 128
-  wallCheck: {fileID: 7920937207102165679}
-  wallSlidingSpeed: 2
-  xWallForce: 3
-  yWallForce: 3
-  wallJumpTime: 1
 --- !u!114 &7920937206356463508
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -179,10 +153,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireDirection: {fileID: 7920937206581569616}
   bulletPrefab: {fileID: 1465620818807416095, guid: a0ef3264c9cbb7e4b936acf6c23f2883, type: 3}
+  meleeImpactEffect: {fileID: 6197892442685452925, guid: 7583d3383cb67b5428a2d93776af088c, type: 3}
+  meleeDmg: 50
   meleeRange: 0.5
   enemyLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 512
 --- !u!95 &7515124130024869593
 Animator:
   serializedVersion: 3
@@ -202,6 +178,47 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &-9005733364474046159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920937206356463509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1043e239126853a42aa64231d30eec4f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpForce: 5
+  checkRadius: 0.5
+  groundCheck: {fileID: 7920937207401708333}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+  MovementSpeed: 15
+  wallLayer:
+    serializedVersion: 2
+    m_Bits: 128
+  wallCheck: {fileID: 7920937207102165679}
+  wallSlidingSpeed: 2
+  xWallForce: 3
+  yWallForce: 3
+  wallJumpTime: 1
+--- !u!114 &8964141943813646128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920937206356463509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9ecb81ef39d7d424c8a800dcde84f832, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 75
+  deathEffect: {fileID: 6197892442685452925, guid: b4547a19765ff9e43943131d8c4e7097, type: 3}
 --- !u!1 &7920937206581569617
 GameObject:
   m_ObjectHideFlags: 0
