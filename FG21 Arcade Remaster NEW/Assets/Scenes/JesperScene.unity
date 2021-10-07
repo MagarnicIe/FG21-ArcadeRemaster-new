@@ -1314,7 +1314,7 @@ GameObject:
   - component: {fileID: 97087095}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5269,7 +5269,7 @@ GameObject:
   - component: {fileID: 385920656}
   m_Layer: 0
   m_Name: Capsule (2)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5352,7 +5352,7 @@ GameObject:
   - component: {fileID: 394202155}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6476,7 +6476,7 @@ GameObject:
   - component: {fileID: 453298749}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8871,7 +8871,7 @@ GameObject:
   - component: {fileID: 576469390}
   m_Layer: 0
   m_Name: Square (31)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9766,7 +9766,7 @@ GameObject:
   - component: {fileID: 645650805}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12417,7 +12417,7 @@ GameObject:
   - component: {fileID: 777583654}
   m_Layer: 0
   m_Name: val
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13853,7 +13853,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 15
+  health: 100
+  trapDamage: 10
+  enemyDamage: 25
   checkRadius: 0.5
+  speed: 10
   groundCheck: {fileID: 2131857388}
   groundLayer:
     serializedVersion: 2
@@ -13866,9 +13870,6 @@ MonoBehaviour:
   sprite: {fileID: 0}
   wallCheck: {fileID: 1832134254}
   wallSlidingSpeed: 2
-  xWallForce: 3
-  yWallForce: 3
-  wallJumpTime: 1
 --- !u!114 &826719067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16870,7 +16871,7 @@ GameObject:
   - component: {fileID: 1044023344}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27914,7 +27915,7 @@ GameObject:
   - component: {fileID: 1794767505}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -30045,7 +30046,7 @@ GameObject:
   - component: {fileID: 1895530906}
   m_Layer: 0
   m_Name: Square (27)
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -32025,7 +32026,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2001380905}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.08507301, y: -23.648474, z: 0}
+  m_LocalPosition: {x: 0.078, y: -23.648474, z: 0}
   m_LocalScale: {x: 0.049135387, y: 0.94256455, z: 1}
   m_Children:
   - {fileID: 290957312}
@@ -32059,7 +32060,7 @@ GameObject:
   - component: {fileID: 2002259327}
   m_Layer: 0
   m_Name: Box
-  m_TagString: Untagged
+  m_TagString: Trap
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
