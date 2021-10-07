@@ -135,7 +135,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49d8b4f41f3855243ade65aa525e1073, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 70
   rb: {fileID: 1823961491842872835}
   damage: 25
   impactEffect: {fileID: 6197892442685452925, guid: 7583d3383cb67b5428a2d93776af088c, type: 3}
@@ -149,7 +149,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: b5ed4f20d4ff8034c959b7a954e66efa, type: 3}
+  m_audioClip: {fileID: 8300000, guid: bae8d2fefa5d730429a55b97e11394e4, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1

@@ -33,52 +33,8 @@ public  class PlayerMovements : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
     }
-
-    private void OnTriggerEnter2D(Collider2D other)
-    {
-        Debug.Log("TrapHit");
-        TakeDamage();
-    }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Enemy")
-        {
-            Debug.Log("EnemyHit");
-            TakeEnemyDamage();
-        }
-    }
-    
-    private void TakeEnemyDamage()
-    {
-        health -= enemyDamage;
-        
-        if (health <= 0)
-        {
-            Die();
-            SceneManager.LoadScene("JesperScene");
-        }
-    }
-
-
-    private void TakeDamage()
-    {
-        health -= trapDamage;
-        
-        if (health <= 0)
-        {
-            Die();
-            SceneManager.LoadScene("JesperScene");
-        }
-    }
-    
-    void Die()
-    {
-        Destroy(gameObject);
-    }
     
     
-
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
@@ -89,8 +45,8 @@ public  class PlayerMovements : MonoBehaviour
                 doubleJump = true;
             }
             else if (doubleJump)
-            {
-                jumpForce = jumpForce;
+            { 
+                
                 Jump();
                 doubleJump = false;
             }
