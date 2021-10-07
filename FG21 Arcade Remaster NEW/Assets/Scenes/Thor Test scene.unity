@@ -706,7 +706,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 5
+  health: 100
+  trapDamage: 10
+  enemyDamage: 25
   checkRadius: 0.5
+  speed: 10
   groundCheck: {fileID: 331373519}
   groundLayer:
     serializedVersion: 2
@@ -715,11 +719,10 @@ MonoBehaviour:
   wallLayer:
     serializedVersion: 2
     m_Bits: 128
+  isMoving: 0
+  sprite: {fileID: 0}
   wallCheck: {fileID: 421173643}
   wallSlidingSpeed: 2
-  xWallForce: 3
-  yWallForce: 3
-  wallJumpTime: 1
 --- !u!50 &146084554
 Rigidbody2D:
   serializedVersion: 4
@@ -754,7 +757,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.07666752}
+  m_Offset: {x: 0, y: 0.027526557}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -765,7 +768,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.84666497}
+  m_Size: {x: 1, y: 0.9449469}
   m_EdgeRadius: 0
 --- !u!212 &146084556
 SpriteRenderer:
@@ -807,7 +810,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 48e93eef0688c4a259cb0eddcd8661f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 934b9268c6c351246b50e2f3469caffc, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -826,8 +829,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 146084551}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.682, y: -0.007, z: 0}
-  m_LocalScale: {x: 0.15667413, y: 0.40710852, z: 0.2665886}
+  m_LocalPosition: {x: 2.528, y: 0.088, z: 0}
+  m_LocalScale: {x: 0.78822756, y: 0.93508756, z: 0.2665886}
   m_Children:
   - {fileID: 730681045}
   - {fileID: 331373519}
