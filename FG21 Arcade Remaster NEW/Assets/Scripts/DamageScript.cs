@@ -34,7 +34,6 @@ public class DamageScript : MonoBehaviour
         }
     }
 
-
     private void TakeDamage()
     {
         health -= trapDamage;

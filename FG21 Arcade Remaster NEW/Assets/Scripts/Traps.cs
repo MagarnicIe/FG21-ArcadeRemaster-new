@@ -3,13 +3,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.Tilemaps;
 using UnityEngine;
-[RequireComponent(typeof(TilemapCollider2D))]
+[RequireComponent(typeof(Collider2D))]
 public class Traps : MonoBehaviour
 {
-    
+    public int damage = 20;
     private void Reset()
     {
-        GetComponent<TilemapCollider2D>().isTrigger = true;
+        GetComponent<Collider2D>().isTrigger = true;
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -17,6 +17,9 @@ public class Traps : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             Debug.Log($"{name} Triggered");
+            collision.GetComponent<PlayerStatus>().TakeDamage(damage);
         }
+        
+        
     }
 }

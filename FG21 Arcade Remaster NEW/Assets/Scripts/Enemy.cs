@@ -10,6 +10,7 @@ public class Enemy : MonoBehaviour
 
     public GameObject deathEffect;
     public GameObject hitEffect;
+    private AudioSource gethitSound;
     
     public LayerMask playerLayer;
 
@@ -18,11 +19,17 @@ public class Enemy : MonoBehaviour
     private int atkSpeed = 1;
     
     private float atkCooldown;
-    
-    
+
+    public void Start()
+    {
+        gethitSound = GetComponent<AudioSource>();
+    }
+
+
     public void TakeDamage(int damage)
     {
         health -= damage;
+        gethitSound.Play();
         
         if (health <= 0) 
         {

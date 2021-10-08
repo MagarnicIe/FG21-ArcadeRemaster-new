@@ -12,24 +12,37 @@ public class PlayerSlide : MonoBehaviour
     public BoxCollider2D regularColl;
     public BoxCollider2D slideColl;
 
-    public float slideSpeed = 5f;
+    public float slideSpeed = 50f;
     
-    
+    public float movement =  Input.GetAxisRaw("Horizontal");
 
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift))
-            preformSlide();
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.D))
+            performSlideRight();
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && Input.GetKeyDown(KeyCode.D))
+            performSlideLeft();
+
     }
 
-    public void preformSlide()
+    public void performSlideRight()
     {
         isSliding = true;
         regularColl.enabled = false;
         slideColl.enabled = true;
         
-        rb.AddForce(Vector2.right * slideSpeed);
+        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * slideSpeed;
+    }
+
+    public void performSlideLeft()
+    {
+        isSliding = true;
+        regularColl.enabled = false;
+        slideColl.enabled = true;
+        
+        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * slideSpeed;
     }
 }
