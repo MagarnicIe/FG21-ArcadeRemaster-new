@@ -26,7 +26,7 @@ public class Enemy : MonoBehaviour
         
         if (health <= 0) 
         {
-            FindObjectOfType<GameManager>().KillCount();
+            FindObjectOfType<PlayerScore>().KillCount();
             
             Die();
         }
