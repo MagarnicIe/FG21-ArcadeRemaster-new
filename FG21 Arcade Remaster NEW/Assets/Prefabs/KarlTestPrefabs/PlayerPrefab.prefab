@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 7515124130024869593}
   - component: {fileID: -9005733364474046159}
   - component: {fileID: 8964141943813646128}
+  - component: {fileID: 3656102027977925596}
   m_Layer: 8
   m_Name: PlayerPrefab
   m_TagString: Untagged
@@ -218,6 +219,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 75
   deathEffect: {fileID: 6197892442685452925, guid: b4547a19765ff9e43943131d8c4e7097, type: 3}
+--- !u!114 &3656102027977925596
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7920937206356463509}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: efeb9e995b970d7459e0861c011cb01f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7920937206581569617
 GameObject:
   m_ObjectHideFlags: 0
