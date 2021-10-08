@@ -53,20 +53,7 @@ public class GameManager : MonoBehaviour
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
-
-   public void KillCount()
-   {
-      _killCounter++;
-
-      Debug.Log($"GOD: You've killed {_killCounter} demons! Only {(_killCounter - _winCondition)} remaining!");
-
-      if (_killCounter + _collectCounter >= _winCondition)
-      {
-         Debug.Log($"GOD: You've killed {_killCounter} demons! Your work is done! Goodbye!");
-        
-         Invoke("VictoryMenu", restartDelay); 
-      } 
-   }
+   
 
    public void CollectCount() //do text counter, count backwards from total amount of collectibles. 
    {
