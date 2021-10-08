@@ -2,6 +2,7 @@ using System;
 using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
@@ -12,10 +13,13 @@ public class GameManager : MonoBehaviour
    public float gameOverDelay = 600f; //10min game over delay.
 
    private int _killCounter; //temp fix. Move to WinConditions / Interfance to keep track of kills.
-
    private int _winCondition = 10;
+   private int _collectCounter;
+   private int _collectTotal;
    
-   
+   public Text scoreText;
+   public Text killCount;
+   public Text collectCount;
 
    public void Start()
    {
@@ -33,10 +37,12 @@ public class GameManager : MonoBehaviour
       {
          gameIsOver = true; //sets game is over to true so we cannot access it again to avoid spam.
 
-         //Invoke("Restart", RestartDelay); //restart current scene with a slight delay.
+        
          Invoke("GameOverMenu", restartDelay);
       }
    }
+   
+   // //Invoke("Restart", RestartDelay); //restart current scene with a slight delay. use for later. (bind enter for quick restart?)
 
    /*void Restart() //maybe use for later.
    {
@@ -52,12 +58,36 @@ public class GameManager : MonoBehaviour
    {
       _killCounter++;
 
-      Debug.Log($"You've killed {_killCounter}demons! Only {(_killCounter - _winCondition)}remaining!");
+      Debug.Log($"GOD: You've killed {_killCounter} demons! Only {(_killCounter - _winCondition)} remaining!");
 
-      if (_killCounter >= _winCondition)
+      if (_killCounter + _collectCounter >= _winCondition)
       {
-         Debug.Log($"You've killed{_killCounter} monsters! You win.");
+         Debug.Log($"GOD: You've killed {_killCounter} demons! Your work is done! Goodbye!");
+        
+         Invoke("VictoryMenu", restartDelay); 
       } 
+   }
+
+   public void CollectCount() //do text counter, count backwards from total amount of collectibles. 
+   {
+      _collectCounter++;
+     
+      Debug.Log($"GOD: You've collected {_collectCounter} out of {_collectTotal}");
+     
+     
+
+      if (_collectCounter >= (_winCondition - 5) && _killCounter == 0) //temp fix, need new wincondition for collect.
+      {
+         Debug.Log($"GOD: You've collected {_collectCounter} out of {_collectTotal}. You can come back now.");
+         Invoke("VictoryMenu", restartDelay); 
+      }
+     
+   } 
+   
+   
+   void VictoryMenu()
+   {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
    }
    
    
