@@ -11,9 +11,15 @@ public class GameManager : MonoBehaviour
 
    public float gameOverDelay = 600f; //10min game over delay.
 
+   private int _killCounter; //temp fix. Move to WinConditions / Interfance to keep track of kills.
+
+   private int _winCondition = 10;
+   
+   
+
    public void Start()
    {
-     EndGameTimer(); //starts a timer at start of the game scene, calls Game over after 10min have passed.
+      EndGameTimer(); //starts a timer at start of the game scene, calls Game over after 10min have passed.
    }
 
    public void EndGameTimer()
@@ -23,15 +29,15 @@ public class GameManager : MonoBehaviour
 
    public void GameOver()
    {
-      if (gameIsOver == false) 
+      if (gameIsOver == false)
       {
          gameIsOver = true; //sets game is over to true so we cannot access it again to avoid spam.
 
          //Invoke("Restart", RestartDelay); //restart current scene with a slight delay.
          Invoke("GameOverMenu", restartDelay);
       }
-   } 
-   
+   }
+
    /*void Restart() //maybe use for later.
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().name); //restarts current scene after dying.
@@ -41,5 +47,23 @@ public class GameManager : MonoBehaviour
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
    }
+
+   public void KillCount()
+   {
+      _killCounter++;
+
+      Debug.Log($"You've killed {_killCounter}demons! Only {(_killCounter - _winCondition)}remaining!");
+
+      if (_killCounter >= _winCondition)
+      {
+         Debug.Log($"You've killed{_killCounter} monsters! You win.");
+      } 
+   }
+   
+   
+
+  
+
+
 
 }
