@@ -3,7 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Security.Cryptography.X509Certificates;
 using UnityEngine;
-using UnityEngine.SocialPlatforms;
 
 public class Enemy : MonoBehaviour
 {
@@ -17,15 +16,18 @@ public class Enemy : MonoBehaviour
     private int range = 1;
     private int damage = 25;
     private int atkSpeed = 1;
-
+    
     private float atkCooldown;
+    
     
     public void TakeDamage(int damage)
     {
         health -= damage;
         
-        if (health <= 0)
+        if (health <= 0) 
         {
+            FindObjectOfType<GameManager>().KillCount();
+            
             Die();
         }
     }
@@ -45,13 +47,14 @@ public class Enemy : MonoBehaviour
                 Instantiate(hitEffect, player.transform.position, transform.rotation);
                 atkCooldown = atkSpeed;
             }
-            
         }
     }
     
-    void Die()
+    public void Die()
     {
         Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
+    
+    
 }
