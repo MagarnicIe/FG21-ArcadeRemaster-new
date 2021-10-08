@@ -31208,7 +31208,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dde11bcfc30fc024ba66da13329087d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  RestartDelay: 3
+  restartDelay: 3
+  gameOverDelay: 600
 --- !u!4 &1036168934
 Transform:
   m_ObjectHideFlags: 0
@@ -56031,7 +56032,7 @@ GameObject:
   - component: {fileID: 1849364315}
   - component: {fileID: 1849364314}
   - component: {fileID: 1849364313}
-  m_Layer: 7
+  m_Layer: 3
   m_Name: Square (410)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
