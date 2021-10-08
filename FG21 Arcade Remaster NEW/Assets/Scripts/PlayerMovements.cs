@@ -8,10 +8,7 @@ public  class PlayerMovements : MonoBehaviour
     private Rigidbody2D rb;
     public float jumpForce;
     private bool isGrounded;
-    public int health = 100;
-    public int trapDamage = 10;
-    public int enemyDamage = 25;
-    
+
     public float checkRadius;
     [SerializeField] public float speed = 10f;
     public Transform groundCheck;
@@ -19,9 +16,6 @@ public  class PlayerMovements : MonoBehaviour
     [SerializeField] private float MovementSpeed;
     private bool doubleJump;
     public LayerMask wallLayer;
-    public bool isMoving;
-    
-    public SpriteRenderer sprite;
 
     private bool isTouchingWall;
     public Transform wallCheck;
@@ -66,6 +60,8 @@ public  class PlayerMovements : MonoBehaviour
         
         
         isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
+        
+        
         var movement = Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
 
@@ -89,13 +85,8 @@ public  class PlayerMovements : MonoBehaviour
 
         if (!Mathf.Approximately(0, movement))
              transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;
-
-        
-
     }
     
-
-
     //Enkelt Hoppscript
     
     void Jump()

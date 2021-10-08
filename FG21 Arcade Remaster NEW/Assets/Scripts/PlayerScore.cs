@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,7 +15,12 @@ public class PlayerScore : MonoBehaviour
    
     public Text killCountLog;
     public Text collectCountLog;
-    
+
+    private void Start()
+    {
+        UpdateGUI();
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Collectible"))
@@ -28,28 +34,35 @@ public class PlayerScore : MonoBehaviour
         if (collectible.Collect())
         {
             _collectCount++;
+            UpdateGUI();
+
+            if (_collectCount >= _winCondition - 5 && _killCount <= 0) 
+            {
+                FindObjectOfType<GameManager>().VictoryPacifist();
+            }
         }
-        UpdateGUI();
+        
     }
     
     public void KillCount()
     {
         _killCount++;
+        UpdateGUI();
         
-        Debug.Log($"GOD: You've killed {_killCount} demons! Only {(_killCount - _winCondition)} remaining!");
+        //Debug.Log($"GOD: You've killed {_killCount} demons! Only {(_killCount - _winCondition)} remaining!");
 
-        if (_killCount + _collectCount >= _winCondition)
+        if (_killCount >= _winCondition)
         {
             Debug.Log($"GOD: You've killed {_killCount} demons! Your work is done! Goodbye!");
-        
-           // Invoke("VictoryMenu", restartDelay); 
+            
+            FindObjectOfType<GameManager>().Victory();
         } 
     }
 
     private void UpdateGUI()
     {
         collectCountLog.text = _collectCount.ToString();
-        killCountLog.text = _collectCount.ToString();
+        killCountLog.text = _killCount.ToString();
     }
     
 }
