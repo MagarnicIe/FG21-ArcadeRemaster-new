@@ -13,18 +13,18 @@ public class Bullet : MonoBehaviour
     
     void Start()
     {
-        rb.velocity = transform.right * speed;
+        rb.velocity = transform.right * speed; //when bullet spawn it will travel the same direction as the player with its own speed.
     }
 
-    private void OnTriggerEnter2D(Collider2D hitInfo)
+    private void OnTriggerEnter2D(Collider2D hitInfo) //stores target information when colliding with enemy.
     {
         Enemy enemy = hitInfo.GetComponent<Enemy>();
-        if (enemy != null)
+        if (enemy != null) //if enemy does exist then damage the enemy with damage and do an effect at bullet impact.
         {
             enemy.TakeDamage(damage);
             Instantiate(impactEffect, transform.position, transform.rotation);
         }
 
-        Destroy(gameObject);
+        Destroy(gameObject); //removes the bullet after impact.
     }
 }
