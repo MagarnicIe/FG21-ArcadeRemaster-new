@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class PlayerStatus : MonoBehaviour
 {
-    public int health = 100;
     
+    
+    public int health = 100;
     public GameObject deathEffect;
     
     public void TakeDamage(int damage)
@@ -20,7 +21,11 @@ public class PlayerStatus : MonoBehaviour
         void Die()
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
+            
+            FindObjectOfType<GameManager>().GameOver();
+            
             Destroy(gameObject);
+
         }
     }
 }

@@ -200,18 +200,6 @@ TextureImporter:
   - first:
       213: 7589195011904977252
     second: Tileset Bricks_65
-  - first:
-      213: 2113986480809317126
-    second: Tileset Bricks_66
-  - first:
-      213: 734773211594911264
-    second: Tileset Bricks_67
-  - first:
-      213: -5191057393759364742
-    second: Tileset Bricks_68
-  - first:
-      213: 8187470722324855485
-    second: Tileset Bricks_69
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -1115,7 +1103,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 240
+        y: 208
         width: 32
         height: 32
       alignment: 0
@@ -1135,8 +1123,8 @@ TextureImporter:
       name: Tileset Bricks_39
       rect:
         serializedVersion: 2
-        x: 32
-        y: 240
+        x: 64
+        y: 208
         width: 32
         height: 32
       alignment: 0
@@ -1156,8 +1144,8 @@ TextureImporter:
       name: Tileset Bricks_40
       rect:
         serializedVersion: 2
-        x: 64
-        y: 240
+        x: 256
+        y: 208
         width: 32
         height: 32
       alignment: 0
@@ -1177,7 +1165,7 @@ TextureImporter:
       name: Tileset Bricks_41
       rect:
         serializedVersion: 2
-        x: 0
+        x: 288
         y: 208
         width: 32
         height: 32
@@ -1198,7 +1186,7 @@ TextureImporter:
       name: Tileset Bricks_42
       rect:
         serializedVersion: 2
-        x: 32
+        x: 320
         y: 208
         width: 32
         height: 32
@@ -1219,7 +1207,7 @@ TextureImporter:
       name: Tileset Bricks_43
       rect:
         serializedVersion: 2
-        x: 64
+        x: 352
         y: 208
         width: 32
         height: 32
@@ -1240,8 +1228,8 @@ TextureImporter:
       name: Tileset Bricks_44
       rect:
         serializedVersion: 2
-        x: 256
-        y: 208
+        x: 0
+        y: 176
         width: 32
         height: 32
       alignment: 0
@@ -1261,8 +1249,8 @@ TextureImporter:
       name: Tileset Bricks_45
       rect:
         serializedVersion: 2
-        x: 288
-        y: 208
+        x: 64
+        y: 176
         width: 32
         height: 32
       alignment: 0
@@ -1282,8 +1270,8 @@ TextureImporter:
       name: Tileset Bricks_46
       rect:
         serializedVersion: 2
-        x: 320
-        y: 208
+        x: 256
+        y: 176
         width: 32
         height: 32
       alignment: 0
@@ -1303,8 +1291,8 @@ TextureImporter:
       name: Tileset Bricks_47
       rect:
         serializedVersion: 2
-        x: 352
-        y: 208
+        x: 288
+        y: 176
         width: 32
         height: 32
       alignment: 0
@@ -1324,7 +1312,7 @@ TextureImporter:
       name: Tileset Bricks_48
       rect:
         serializedVersion: 2
-        x: 0
+        x: 320
         y: 176
         width: 32
         height: 32
@@ -1345,7 +1333,7 @@ TextureImporter:
       name: Tileset Bricks_49
       rect:
         serializedVersion: 2
-        x: 32
+        x: 352
         y: 176
         width: 32
         height: 32
@@ -1366,8 +1354,8 @@ TextureImporter:
       name: Tileset Bricks_50
       rect:
         serializedVersion: 2
-        x: 64
-        y: 176
+        x: 0
+        y: 144
         width: 32
         height: 32
       alignment: 0
@@ -1387,8 +1375,8 @@ TextureImporter:
       name: Tileset Bricks_51
       rect:
         serializedVersion: 2
-        x: 256
-        y: 176
+        x: 64
+        y: 144
         width: 32
         height: 32
       alignment: 0
@@ -1408,8 +1396,8 @@ TextureImporter:
       name: Tileset Bricks_52
       rect:
         serializedVersion: 2
-        x: 288
-        y: 176
+        x: 256
+        y: 144
         width: 32
         height: 32
       alignment: 0
@@ -1429,8 +1417,8 @@ TextureImporter:
       name: Tileset Bricks_53
       rect:
         serializedVersion: 2
-        x: 320
-        y: 176
+        x: 288
+        y: 144
         width: 32
         height: 32
       alignment: 0
@@ -1450,8 +1438,8 @@ TextureImporter:
       name: Tileset Bricks_54
       rect:
         serializedVersion: 2
-        x: 352
-        y: 176
+        x: 320
+        y: 144
         width: 32
         height: 32
       alignment: 0
@@ -1471,7 +1459,7 @@ TextureImporter:
       name: Tileset Bricks_55
       rect:
         serializedVersion: 2
-        x: 0
+        x: 352
         y: 144
         width: 32
         height: 32
@@ -1492,8 +1480,8 @@ TextureImporter:
       name: Tileset Bricks_56
       rect:
         serializedVersion: 2
-        x: 32
-        y: 144
+        x: 0
+        y: 112
         width: 32
         height: 32
       alignment: 0
@@ -1514,7 +1502,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 144
+        y: 112
         width: 32
         height: 32
       alignment: 0
@@ -1534,8 +1522,8 @@ TextureImporter:
       name: Tileset Bricks_58
       rect:
         serializedVersion: 2
-        x: 256
-        y: 144
+        x: 288
+        y: 112
         width: 32
         height: 32
       alignment: 0
@@ -1555,8 +1543,8 @@ TextureImporter:
       name: Tileset Bricks_59
       rect:
         serializedVersion: 2
-        x: 288
-        y: 144
+        x: 320
+        y: 112
         width: 32
         height: 32
       alignment: 0
@@ -1576,8 +1564,8 @@ TextureImporter:
       name: Tileset Bricks_60
       rect:
         serializedVersion: 2
-        x: 320
-        y: 144
+        x: 0
+        y: 80
         width: 32
         height: 32
       alignment: 0
@@ -1597,8 +1585,8 @@ TextureImporter:
       name: Tileset Bricks_61
       rect:
         serializedVersion: 2
-        x: 352
-        y: 144
+        x: 64
+        y: 80
         width: 32
         height: 32
       alignment: 0
@@ -1610,174 +1598,6 @@ TextureImporter:
       bones: []
       spriteID: 0b2fd5a8c956ee8e0800000000000000
       internalID: -1662279489442418000
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_62
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 112
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9f13f9e0ae97ba0c0800000000000000
-      internalID: -4563419751235243527
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_63
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 112
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9b2c4942990176730800000000000000
-      internalID: 3992177844617003705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_64
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 112
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0b80e2d709ea69e00800000000000000
-      internalID: 1051219498636282032
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_65
-      rect:
-        serializedVersion: 2
-        x: 288
-        y: 112
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 46933cf67ac325960800000000000000
-      internalID: 7589195011904977252
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_66
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 112
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6031e900183665d10800000000000000
-      internalID: 2113986480809317126
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_67
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 80
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 02e669bc750723a00800000000000000
-      internalID: 734773211594911264
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_68
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 80
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a79de44cdc8a5f7b0800000000000000
-      internalID: -5191057393759364742
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tileset Bricks_69
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 80
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: dba751d2e3dbf9170800000000000000
-      internalID: 8187470722324855485
       vertices: []
       indices: 
       edges: []
