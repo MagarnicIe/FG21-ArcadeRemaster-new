@@ -18,6 +18,7 @@ public  class PlayerMovementsTest : MonoBehaviour
     public float checkRadius;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    
     [SerializeField] private float MovementSpeed;
     private bool doubleJump;
     public LayerMask wallLayer;
@@ -48,7 +49,6 @@ public  class PlayerMovementsTest : MonoBehaviour
                 Jump();
                 doubleJump = false;
             }
-
             if (isTouchingWall)
             {
                 doubleJump = true;
@@ -61,28 +61,29 @@ public  class PlayerMovementsTest : MonoBehaviour
     private void FixedUpdate()
     {
 
-        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
+       isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
         
         var movement =  Input.GetAxisRaw("Horizontal");
         transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
-
+        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
         
-       isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
-        if (isTouchingWall && isGrounded == false && movement != 0)
-        {
-            wallSliding = true;
-        }
-        else
-        {
-            wallSliding = false;
-        }
+       
+       if (isTouchingWall && isGrounded == false && movement != 0)
+       {
+          wallSliding = true;
+           doubleJump = true;
+       }
+       else
+       {
+           wallSliding = false;
+       }
 
-        if (wallSliding)
-        {
-            var velocity = rb.velocity;
-            rb.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -wallSlidingSpeed, float.MaxValue));
-        }
-
+       if (wallSliding)
+       {
+           var velocity = rb.velocity;
+           rb.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -wallSlidingSpeed, float.MaxValue));
+       }
+//
     
         if (!Mathf.Approximately(0, movement))
             transform.rotation = movement < 0 ? Quaternion.Euler(0, 180, 0) : Quaternion.identity;

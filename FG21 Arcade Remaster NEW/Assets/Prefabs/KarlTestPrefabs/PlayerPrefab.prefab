@@ -202,9 +202,6 @@ MonoBehaviour:
     m_Bits: 128
   wallCheck: {fileID: 7920937207102165679}
   wallSlidingSpeed: 1
-  xWallForce: 333
-  yWallForce: 333
-  wallJumpTime: 1
 --- !u!114 &8964141943813646128
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -219,6 +216,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 75
   deathEffect: {fileID: 6197892442685452925, guid: b4547a19765ff9e43943131d8c4e7097, type: 3}
+  totalHearts: 3
+  hearts: []
+  fullHeart: {fileID: 21300000, guid: 7cb89c28f9fceee49ae29031bddd007b, type: 3}
+  emptyHeart: {fileID: 21300000, guid: d5f98f74a8d228341a5d20a4afcee090, type: 3}
 --- !u!114 &3656102027977925596
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -231,6 +232,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: efeb9e995b970d7459e0861c011cb01f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  killCountLog: {fileID: 0}
+  collectCountLog: {fileID: 0}
 --- !u!1 &7920937206581569617
 GameObject:
   m_ObjectHideFlags: 0

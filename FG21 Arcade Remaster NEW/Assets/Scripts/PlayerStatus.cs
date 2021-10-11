@@ -2,12 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class PlayerStatus : MonoBehaviour
 {
     
     
-    public int health = 100;
+    public int health = 3;
+    
+    
     public GameObject deathEffect;
+    
     
     public void TakeDamage(int damage)
     {
@@ -21,6 +25,8 @@ public class PlayerStatus : MonoBehaviour
         void Die()
         {
             FindObjectOfType<GameManager>().GameOver();
+            Instantiate(deathEffect, transform.position, Quaternion.identity);
+            Destroy(gameObject);
         }
     }
 }

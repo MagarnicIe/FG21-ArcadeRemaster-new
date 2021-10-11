@@ -15,7 +15,7 @@ public class Enemy : MonoBehaviour
     public LayerMask playerLayer;
 
     private int range = 1;
-    private int damage = 25;
+    private int damage = 1;
     private int atkSpeed = 1;
     
     private float atkCooldown;
