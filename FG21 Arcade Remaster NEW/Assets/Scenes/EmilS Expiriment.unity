@@ -46625,6 +46625,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Enemy
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &230417902
@@ -47595,6 +47599,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &279631248
@@ -49757,9 +49765,9 @@ GameObject:
   - component: {fileID: 404359846}
   - component: {fileID: 404359847}
   - component: {fileID: 404359848}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -49919,7 +49927,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   fireDirection: {fileID: 703720419}
   bulletPrefab: {fileID: 1465620818807416095, guid: a0ef3264c9cbb7e4b936acf6c23f2883, type: 3}
-  meleeImpactEffect: {fileID: 0}
+  meleeImpactEffect: {fileID: 6197892442685452925, guid: 7583d3383cb67b5428a2d93776af088c, type: 3}
   meleeDmg: 50
   meleeRange: 0.5
   enemyLayers:
@@ -50563,6 +50571,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &443351173
@@ -53853,6 +53865,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (15)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &651066919
@@ -55051,6 +55067,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &721340145
@@ -55398,6 +55418,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &742739920
@@ -57149,6 +57173,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &819998233
@@ -57304,6 +57332,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &821490486
@@ -65219,6 +65251,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (8)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &1309379054
@@ -65885,6 +65921,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &1371207946
@@ -69401,6 +69441,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (11)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &1573904291
@@ -70761,6 +70805,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &1654457490
@@ -74622,6 +74670,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &1914910895
@@ -75182,6 +75234,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &1943324863
@@ -76214,6 +76270,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &2033445482
@@ -76396,6 +76456,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &2054000867
@@ -76687,6 +76751,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &2067964657
@@ -77458,6 +77526,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: EnemyPrefabPlaceholder (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 1171101393139665832, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 404359844}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
 --- !u!1 &2138069130
