@@ -16,16 +16,25 @@ public class AIFOLLOWTEST : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < lineOfSite)
+        if ( player != null)
         {
-            transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+            CheckForPlayer();
         }
+       
     }
 
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position,lineOfSite);
+    }
+
+    private void CheckForPlayer()
+    {
+        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+        if(distanceFromPlayer < lineOfSite)
+        {
+            transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+        }
     }
 }
