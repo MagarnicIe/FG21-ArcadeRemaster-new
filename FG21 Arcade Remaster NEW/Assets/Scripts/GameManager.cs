@@ -9,12 +9,12 @@ public class GameManager : MonoBehaviour
    private bool gameIsOver = false; //default to false to access method as soon as we die.
 
    public float restartDelay = 3f;
-   
-   private bool gamePlaying = false; //
+
+   //private bool gamePlaying;
    
    public void Start()
    {
-      gamePlaying = true;
+      //gamePlaying = true;
       TimerController.instance.BeginTimer(); //starts the ingame countdown.
    }
    
