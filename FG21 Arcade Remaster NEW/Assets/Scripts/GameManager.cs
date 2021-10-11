@@ -9,9 +9,7 @@ public class GameManager : MonoBehaviour
    private bool gameIsOver = false; //default to false to access method as soon as we die.
 
    public float restartDelay = 3f;
-
    
-
    private bool gamePlaying = false; //
    
    public void Start()

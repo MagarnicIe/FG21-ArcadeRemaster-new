@@ -20,7 +20,7 @@ public class TimerController : MonoBehaviour
         instance = this; //starts the timercontroller on awake.
     }
 
-    private void start()
+    private void Start()
     {
         countDownTimer.text = "Time: 05:00.00"; //text display layout in minutes, seconds and fraction of seconds.
         timerGoing = false;

@@ -62,8 +62,13 @@ public class PlayerScore : MonoBehaviour
 
     private void UpdateGUI()
     {
-        collectCountLog.text = _collectCount.ToString();
-        killCountLog.text = _killCount.ToString();
+        //collectCountLog.text = _collectCount.ToString();
+        //killCountLog.text = _killCount.ToString();
+        
+        collectCountLog.text = "Collects :" + _collectCount.ToString() + "  / " + _winConditionCollects;
+        killCountLog.text = "Kills :" + _killCount.ToString() + " / " + _winConditionKills;
+        
+        
     }
     
 }
