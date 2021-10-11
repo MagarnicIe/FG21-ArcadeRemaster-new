@@ -9,19 +9,15 @@ public class GameManager : MonoBehaviour
    private bool gameIsOver = false; //default to false to access method as soon as we die.
 
    public float restartDelay = 3f;
-
-   public float gameOverDelay = 600f; //10min game over delay.
+   
+   private bool gamePlaying = false; //
    
    public void Start()
    {
-      EndGameTimer(); //starts a timer at start of the game scene, calls Game over after 10min have passed.
+      gamePlaying = true;
+      TimerController.instance.BeginTimer(); //starts the ingame countdown.
    }
-
-   public void EndGameTimer()
-   {
-      Invoke("GameOverMenu", gameOverDelay);
-   }
-
+   
    public void GameOver()
    {
       if (gameIsOver == false)

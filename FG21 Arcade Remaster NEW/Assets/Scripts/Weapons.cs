@@ -52,5 +52,6 @@ public class Weapons : MonoBehaviour
         if (fireDirection == null) //removes error / breaking if fireDirection lacks reference.
             return;
         Gizmos.DrawWireSphere(fireDirection.position, meleeRange); //displays melee range in unity.
+        
     }
 }

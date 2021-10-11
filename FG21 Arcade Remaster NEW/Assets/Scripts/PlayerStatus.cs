@@ -20,12 +20,7 @@ public class PlayerStatus : MonoBehaviour
         
         void Die()
         {
-            Instantiate(deathEffect, transform.position, Quaternion.identity);
-            
             FindObjectOfType<GameManager>().GameOver();
-            
-            Destroy(gameObject);
-
         }
     }
 }
