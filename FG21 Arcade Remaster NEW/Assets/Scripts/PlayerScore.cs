@@ -11,7 +11,8 @@ public class PlayerScore : MonoBehaviour
         
         
     private int _collectTotal;
-    private int _winCondition = 10; //temp
+    private int _winConditionKills = 10; //temp
+    private int _winConditionCollects = 5;
    
     public Text killCountLog;
     public Text collectCountLog;
@@ -36,7 +37,7 @@ public class PlayerScore : MonoBehaviour
             _collectCount++;
             UpdateGUI();
 
-            if (_collectCount >= _winCondition - 5 && _killCount <= 0) 
+            if (_collectCount >= _winConditionCollects && _killCount <= 0) 
             {
                 FindObjectOfType<GameManager>().VictoryPacifist();
             }
@@ -51,7 +52,7 @@ public class PlayerScore : MonoBehaviour
         
         //Debug.Log($"GOD: You've killed {_killCount} demons! Only {(_killCount - _winCondition)} remaining!");
 
-        if (_killCount >= _winCondition)
+        if (_killCount >= _winConditionKills)
         {
             Debug.Log($"GOD: You've killed {_killCount} demons! Your work is done! Goodbye!");
             

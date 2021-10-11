@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: cf55344ed4f73954b90c1214842673fe
+  - enabled: 1
+    path: Assets/Scenes/Victory Pacifist.unity
+    guid: 861ccbccf1fb46c46a27a1c6ee50c564
   m_configObjects: {}
