@@ -663,6 +663,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1459584254}
     m_Modifications:
     - target: {fileID: -9005733364474046159, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 2044742635}
+    - target: {fileID: -9005733364474046159, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
       propertyPath: jumpForce
       value: 15
       objectReference: {fileID: 0}
@@ -42902,6 +42906,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &2044742635 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7515124130024869593, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+  m_PrefabInstance: {fileID: 338657966}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2053330885
 GameObject:
   m_ObjectHideFlags: 0
