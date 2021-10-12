@@ -46573,6 +46573,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 164208115533268965, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: range
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164208115533268965, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: damage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164208115533268965, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: atkSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 164208115533268965, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
+      propertyPath: atkCooldown
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 164208115533268966, guid: 5d1d8904228d7ec4db359fccf0986ff8, type: 3}
       propertyPath: m_RootOrder
       value: 1
