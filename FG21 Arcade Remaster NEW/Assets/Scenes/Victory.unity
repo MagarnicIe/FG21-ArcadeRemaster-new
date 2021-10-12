@@ -1801,7 +1801,7 @@ GameObject:
   - component: {fileID: 2025255490}
   - component: {fileID: 2025255491}
   m_Layer: 5
-  m_Name: GameOverMenu
+  m_Name: VictoryMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
