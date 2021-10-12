@@ -46,7 +46,6 @@ public class Enemy : MonoBehaviour
         Collider2D[] enemyHitPlayer = Physics2D.OverlapCircleAll(transform.position, range, playerLayer);
         
         atkCooldown -= Time.deltaTime;
-        
         foreach (Collider2D player in enemyHitPlayer)
         {
             if (atkCooldown <= 0)
