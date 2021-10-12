@@ -13,7 +13,7 @@ public  class PlayerMovementsTest : MonoBehaviour
     [SerializeField]public float jumpForce;
 
     private AudioSource jumpsound;
-    
+    public Animator animator;
     private bool isGrounded;
     public float checkRadius;
     public Transform groundCheck;
@@ -22,12 +22,13 @@ public  class PlayerMovementsTest : MonoBehaviour
     [SerializeField] private float MovementSpeed;
     private bool doubleJump;
     public LayerMask wallLayer;
-
+    private float movement = 0f;
     private bool isTouchingWall;
     public Transform wallCheck;
     private bool wallSliding;
     public float wallSlidingSpeed;
-    
+    private static readonly int IsJumping = Animator.StringToHash("isJumping");
+
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -62,8 +63,10 @@ public  class PlayerMovementsTest : MonoBehaviour
     {
 
        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
-        
-        var movement =  Input.GetAxisRaw("Horizontal");
+
+       animator.SetFloat("MovementSpeed", Mathf.Abs(movement));
+
+       movement = Input.GetAxisRaw("Horizontal");
         if (isTouchingWall == false)
         {
             transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
@@ -87,6 +90,11 @@ public  class PlayerMovementsTest : MonoBehaviour
            var velocity = rb.velocity;
            rb.velocity = new Vector2(velocity.x, Mathf.Clamp(velocity.y, -wallSlidingSpeed, float.MaxValue));
        }
+
+       if (isGrounded)
+       {
+           animator.SetBool(IsJumping, false);
+       }
 //
     
         if (!Mathf.Approximately(0, movement))
@@ -96,8 +104,8 @@ public  class PlayerMovementsTest : MonoBehaviour
     
     void Jump()
     {
-        
         rb.velocity = Vector2.up * jumpForce;
+        animator.SetBool(IsJumping, true);
         jumpsound.Play();
         
     }
