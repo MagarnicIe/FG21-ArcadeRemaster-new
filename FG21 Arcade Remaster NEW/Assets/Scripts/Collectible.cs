@@ -8,6 +8,7 @@ public class Collectible : MonoBehaviour
 {
 
    private bool isCollected = false;
+   //private AudioSource collected;
 
    public bool Collect()
    {
@@ -17,7 +18,8 @@ public class Collectible : MonoBehaviour
       }
 
       isCollected = true;
-      Destroy(gameObject); //removes object as soon as collected.
+      //collected.Play();
+      Destroy(gameObject,(float) 0.1); //removes object as soon as collected.
       return true;
    }
 }

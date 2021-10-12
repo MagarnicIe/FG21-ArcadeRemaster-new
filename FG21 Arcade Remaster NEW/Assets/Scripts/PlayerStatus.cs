@@ -7,7 +7,7 @@ public class PlayerStatus : MonoBehaviour
 {
     
     
-    public int health = 3;
+    public int health = 5;
     
     
     public GameObject deathEffect;

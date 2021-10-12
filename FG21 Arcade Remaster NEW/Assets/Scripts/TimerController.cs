@@ -29,7 +29,7 @@ public class TimerController : MonoBehaviour
     public void BeginTimer()
     {
         timerGoing = true;
-        _timerValue = 300f; // game timer in seconds.
+        _timerValue = 60f; // game timer in seconds.
 
         StartCoroutine(UpdateTimer());
     }
