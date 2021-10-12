@@ -14,11 +14,11 @@ public class Enemy : MonoBehaviour
     
     public LayerMask playerLayer;
 
-    private int range = 1;
-    private int damage = 25;
-    private int atkSpeed = 1;
-    
-    private float atkCooldown;
+    public int range;
+    public int damage;
+    public int atkSpeed;
+
+    public float atkCooldown;
 
     public void Start()
     {
@@ -38,8 +38,8 @@ public class Enemy : MonoBehaviour
             Die();
         }
     }
-    
-    void Update()
+
+    public virtual void Update()
     {
         //animator.SetTrigger("Attack"); animation trigger used for future animation when striking. 
         Collider2D[] enemyHitPlayer = Physics2D.OverlapCircleAll(transform.position, range, playerLayer);
@@ -59,7 +59,7 @@ public class Enemy : MonoBehaviour
     
     public void Die()
     {
-        // Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Instantiate(deathEffect, transform.position, Quaternion.identity);
         Destroy(gameObject);
     }
     

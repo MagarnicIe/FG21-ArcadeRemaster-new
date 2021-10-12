@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEditor.PackageManager;
 using UnityEngine;
 
-public class Bullet : MonoBehaviour
+public class PlayerProjectile : MonoBehaviour
 {
     public float speed = 30f;
     public Rigidbody2D rb;
