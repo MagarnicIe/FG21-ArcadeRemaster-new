@@ -165,6 +165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 5
+  animator: {fileID: 0}
   checkRadius: 0.5
   groundCheck: {fileID: 7920937207401708333}
   groundLayer:
@@ -218,7 +219,7 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.030625343, y: 0.004374504}
-  m_Size: {x: 0.83374786, y: 0.95625114}
+  m_Size: {x: 0.83374786, y: 0.87}
   m_Direction: 0
 --- !u!1 &7920937206581569617
 GameObject:
