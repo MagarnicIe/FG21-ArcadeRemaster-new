@@ -41,6 +41,7 @@ public class Enemy : MonoBehaviour
 
     public virtual void Update()
     {
+        
         //animator.SetTrigger("Attack"); animation trigger used for future animation when striking. 
         Collider2D[] enemyHitPlayer = Physics2D.OverlapCircleAll(transform.position, range, playerLayer);
         
