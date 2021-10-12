@@ -193,6 +193,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   jumpForce: 15
+  animator: {fileID: 0}
   checkRadius: 0.5
   groundCheck: {fileID: 8760268188297458486}
   groundLayer:
