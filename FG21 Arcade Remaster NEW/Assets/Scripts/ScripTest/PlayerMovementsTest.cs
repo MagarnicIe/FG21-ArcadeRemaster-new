@@ -64,7 +64,11 @@ public  class PlayerMovementsTest : MonoBehaviour
        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
         
         var movement =  Input.GetAxisRaw("Horizontal");
-        transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        if (isTouchingWall == false)
+        {
+            transform.position += new Vector3(movement, 0, 0) * Time.deltaTime * MovementSpeed;
+        }
+       
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
         
        
@@ -92,8 +96,10 @@ public  class PlayerMovementsTest : MonoBehaviour
     
     void Jump()
     {
+        
         rb.velocity = Vector2.up * jumpForce;
         jumpsound.Play();
+        
     }
     
     
