@@ -26,7 +26,9 @@ public class PlayerStatus : MonoBehaviour
         {
             Instantiate(deathEffect, transform.position, Quaternion.identity);
             FindObjectOfType<GameManager>().GameOver();
-            Destroy(gameObject);
+            
+            Destroy (gameObject, (float) 0.1); //destroys the game object with a slight delay so other scripts can get hp etc.
+            
         }
     }
 }
