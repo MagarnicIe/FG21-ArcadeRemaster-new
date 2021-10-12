@@ -18037,6 +18037,11 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!95 &802295167 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7515124130024869593, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+  m_PrefabInstance: {fileID: 2065944935}
+  m_PrefabAsset: {fileID: 0}
 --- !u!114 &802295171
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49655,6 +49660,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -9005733364474046159, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 802295167}
+    - target: {fileID: -9005733364474046159, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
       propertyPath: jumpForce
       value: 15
       objectReference: {fileID: 0}
@@ -49678,6 +49687,10 @@ PrefabInstance:
       propertyPath: collectCountLog
       value: 
       objectReference: {fileID: 294467274}
+    - target: {fileID: 7515124130024869593, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 22686a4f5a947764c81b164e5b27504b, type: 2}
     - target: {fileID: 7920937206356463508, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
       propertyPath: meleeImpactEffect
       value: 
