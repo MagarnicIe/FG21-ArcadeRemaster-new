@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 6376179622583695644}
   - component: {fileID: 5366964193062401361}
   - component: {fileID: 6502036762737428542}
+  - component: {fileID: 1754425444599451732}
   m_Layer: 9
   m_Name: EnemyGoat
   m_TagString: Enemy
@@ -270,6 +271,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1754425444599451732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6376179622583695635}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6502036762933656010
 GameObject:
   m_ObjectHideFlags: 0
