@@ -1753,7 +1753,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 
@@ -1908,7 +1908,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 6
+  orthographic size: 15
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -14695,7 +14695,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 
@@ -14823,7 +14823,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 
@@ -15036,7 +15036,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 
@@ -44872,7 +44872,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 
@@ -44989,7 +44989,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 
@@ -45375,7 +45375,7 @@ PrefabInstance:
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 802295161}
     - target: {fileID: 1604344822320519225, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
       propertyPath: animator
       value: 

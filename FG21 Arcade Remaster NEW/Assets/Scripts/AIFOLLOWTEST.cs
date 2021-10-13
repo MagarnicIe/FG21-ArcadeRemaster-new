@@ -12,6 +12,7 @@ public class AIFOLLOWTEST : MonoBehaviour
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,8 +36,15 @@ public class AIFOLLOWTEST : MonoBehaviour
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
         if(distanceFromPlayer < lineOfSite)
         {
+            animator.SetBool("moving", true);
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
-            animator.SetFloat("enemySpeed", Mathf.Abs(speed));
+            
+        }
+        else
+        {
+            animator.SetBool("moving", false);
         }
     }
+    
+    
 }
