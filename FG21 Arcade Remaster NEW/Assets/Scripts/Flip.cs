@@ -26,7 +26,7 @@ public class Flip : MonoBehaviour
             transform.Rotate(0f, 180f, 0f);
             isFlipped = true;
         }
-        
+
     }
-    
+
 }
