@@ -479,20 +479,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &120170778
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 120170770}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!4 &128900444 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 307427812702164087, guid: ed1d2a9f7fbe5e144bd58aa16d07a626, type: 3}
@@ -865,20 +851,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &250572346
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 250572338}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!1 &252264709
 GameObject:
   m_ObjectHideFlags: 0
@@ -1314,20 +1286,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &295117167
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 295117159}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!1 &296500358
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,20 +1479,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &320909602
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 320909594}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!1 &327192910
 GameObject:
   m_ObjectHideFlags: 0
@@ -2574,20 +2518,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &692089852
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 692089844}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!1 &699672416
 GameObject:
   m_ObjectHideFlags: 0
@@ -15223,20 +15153,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1057883857
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1057883849}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!1 &1059326889
 GameObject:
   m_ObjectHideFlags: 0
@@ -44068,20 +43984,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1598765095
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1598765087}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d568a376c82cd6041968a1c561930b30, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 802295161}
-  isFlipped: 0
 --- !u!1 &1618210689
 GameObject:
   m_ObjectHideFlags: 0
