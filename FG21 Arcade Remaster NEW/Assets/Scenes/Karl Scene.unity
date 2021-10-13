@@ -45590,6 +45590,18 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 9100000, guid: 22686a4f5a947764c81b164e5b27504b, type: 2}
     - target: {fileID: 7920937206356463508, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+      propertyPath: atkSpeed
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920937206356463508, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+      propertyPath: meleeDmg
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920937206356463508, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
+      propertyPath: meleeRange
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7920937206356463508, guid: 97ada88511538bf4c951c63f68b730de, type: 3}
       propertyPath: meleeImpactEffect
       value: 
       objectReference: {fileID: 6197892442685452925, guid: 7583d3383cb67b5428a2d93776af088c, type: 3}
