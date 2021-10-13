@@ -17,7 +17,15 @@ public class GameManager : MonoBehaviour
       //gamePlaying = true;
       TimerController.instance.BeginTimer(); //starts the ingame countdown.
    }
-   
+
+   public void Update()
+   {
+      if (Input.GetKeyDown(KeyCode.R))
+      {
+         GameRestart();
+      }
+   }
+
    public void GameOver()
    {
       if (gameIsOver == false)
@@ -48,8 +56,6 @@ public class GameManager : MonoBehaviour
       }
    }
    
-   // //Invoke("Restart", RestartDelay); //restart current scene with a slight delay. use for later. (bind enter for quick restart?)
-   
    void GameOverMenu()
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -62,6 +68,11 @@ public class GameManager : MonoBehaviour
    private void VictoryMenuPacifist()
    {
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 3);
+   }
+
+   void GameRestart()
+   {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
    }
    
 }
