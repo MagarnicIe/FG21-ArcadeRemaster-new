@@ -285,7 +285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 6
   player: {fileID: 0}
-  lineOfSite: 7
+  lineOfSite: 10
   animator: {fileID: 551691641659565628}
 --- !u!82 &7890136303079081127
 AudioSource:
