@@ -10,15 +10,16 @@ public class Weapons : MonoBehaviour
     
     public GameObject meleeImpactEffect;
 
-    public int meleeDmg = 50;
-    public float meleeRange = 0.5f;
-    public LayerMask enemyLayers;
-    
+    public float atkSpeed = 0.05f;
+    public float atkCooldown = 0;
 
-    //public Animator animator; will be used when animator is set.
+    public int meleeDmg = 100;
+    public float meleeRange = 1f;
+    public LayerMask enemyLayers;
     
     void Update()
     {
+        atkCooldown -= Time.deltaTime;
         if (Input.GetMouseButtonDown(0)) //left mouse button
         {
             Shoot();
@@ -27,11 +28,16 @@ public class Weapons : MonoBehaviour
         {
             Melee();
         }
+        
     }
 
     void Shoot()
     {
-        Instantiate(bulletPrefab, fireDirection.position, fireDirection.rotation); //spawns the bullet
+        if (atkCooldown <= 0)
+        {
+            Instantiate(bulletPrefab, fireDirection.position, fireDirection.rotation); //spawns the bullet    
+            atkCooldown = atkSpeed;
+        }
     }
 
     void Melee()
