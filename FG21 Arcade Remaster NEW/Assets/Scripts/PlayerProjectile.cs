@@ -1,19 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-//using UnityEditor.PackageManager;
 using UnityEngine;
 
 public class PlayerProjectile : MonoBehaviour
 {
     public float speed = 30f;
-    public Rigidbody2D rb;
+    
     public int damage = 25;
     public GameObject impactEffect;
-    
-    void Start()
+
+    private void Update()
     {
-        rb.velocity = transform.right * speed; //when bullet spawn it will travel the same direction as the player with its own speed.
+        transform.Translate(Vector2.right*speed*Time.deltaTime, Space.Self);
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo) //stores target information when colliding with enemy.
@@ -23,8 +22,9 @@ public class PlayerProjectile : MonoBehaviour
         {
             enemy.TakeDamage(damage);
             Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(gameObject, 0.01f);
         }
 
-        Destroy(gameObject); //removes the bullet after impact.
+        Destroy(gameObject, 0.01f);
     }
 }

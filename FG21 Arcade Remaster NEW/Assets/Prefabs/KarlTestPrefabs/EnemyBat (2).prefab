@@ -234,7 +234,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ed612079d3327849b1e7cb7d1a56a51, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -340,7 +340,7 @@ MonoBehaviour:
   range: 5
   damage: 0
   atkSpeed: 1
-  atkCooldown: 0
+  atkCooldown: 5
   enemyProjectile: {fileID: 1465620818807416095, guid: 8e05bcc61de938a4c92648da87e1aece, type: 3}
   fireDirection: {fileID: 5922892093898709584}
 --- !u!114 &5922892095509668034

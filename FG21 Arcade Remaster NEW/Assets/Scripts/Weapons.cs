@@ -6,8 +6,9 @@ using UnityEngine;
 public class Weapons : MonoBehaviour
 {
     public Transform fireDirection;
-    public GameObject bulletPrefab;
+    public Transform firePoint;
     
+    public GameObject bulletPrefab;
     public GameObject meleeImpactEffect;
 
     public float atkSpeed = 0.05f;
@@ -17,9 +18,24 @@ public class Weapons : MonoBehaviour
     public float meleeRange = 1f;
     public LayerMask enemyLayers;
     
+    
+    
     void Update()
     {
         atkCooldown -= Time.deltaTime;
+        
+        Vector3 fireDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
+        if (fireDirection.x<transform.position.x)
+        {
+            transform.eulerAngles = new Vector3(transform.rotation.x, 180f, transform.rotation.z);
+        }
+        else
+        {
+            transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
+        }
+
+       
         if (Input.GetMouseButtonDown(0)) //left mouse button
         {
             Shoot();
@@ -35,7 +51,9 @@ public class Weapons : MonoBehaviour
     {
         if (atkCooldown <= 0)
         {
-            Instantiate(bulletPrefab, fireDirection.position, fireDirection.rotation); //spawns the bullet    
+            // GameObject bullet = Instantiate(bulletPrefab, fireDirection.position, fireDirection.rotation); //spawns the bullet  
+            GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); //spawns the bullet   
+            Destroy(bullet, 1); //destroys the bullet after 1sec.
             atkCooldown = atkSpeed;
         }
     }
