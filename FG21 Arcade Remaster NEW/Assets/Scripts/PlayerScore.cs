@@ -8,6 +8,7 @@ public class PlayerScore : MonoBehaviour
 {
     private int _killCount = 0; //temp fix. Move to WinConditions / Interfance to keep track of kills.
     private int _collectCount = 0;
+    public float _scoreCount = 0;
         
     
     private int _winConditionKills = 10; //temp
@@ -15,6 +16,7 @@ public class PlayerScore : MonoBehaviour
    
     public Text killCountLog;
     public Text collectCountLog;
+    public Text scoreCountLog;
 
     private void Start()
     {
@@ -33,6 +35,7 @@ public class PlayerScore : MonoBehaviour
     {
         if (collectible.Collect())
         {
+            _scoreCount +=100;
             _collectCount++;
             UpdateGUI();
 
@@ -47,6 +50,7 @@ public class PlayerScore : MonoBehaviour
     
     public void KillCount()
     {
+        _scoreCount +=50;
         _killCount++;
         UpdateGUI();
         
@@ -64,6 +68,7 @@ public class PlayerScore : MonoBehaviour
     {
         collectCountLog.text = "Collects :" + _collectCount.ToString() + "  / " + _winConditionCollects;
         killCountLog.text = "Kills :" + _killCount.ToString() + " / " + _winConditionKills;
+        scoreCountLog.text = "Score: " + _scoreCount;
     }
     
 }

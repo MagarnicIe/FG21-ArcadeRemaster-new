@@ -8,6 +8,7 @@ public class AIFOLLOWTEST : MonoBehaviour
     public float speed;
     public Transform player;
     public float lineOfSite;
+    public Animator animator;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -35,6 +36,7 @@ public class AIFOLLOWTEST : MonoBehaviour
         if(distanceFromPlayer < lineOfSite)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, speed * Time.deltaTime);
+            animator.SetFloat("enemySpeed", Mathf.Abs(speed));
         }
     }
 }
