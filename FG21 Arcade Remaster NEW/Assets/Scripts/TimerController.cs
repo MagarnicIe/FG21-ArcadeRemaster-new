@@ -12,6 +12,7 @@ public class TimerController : MonoBehaviour
 
     private TimeSpan timeRemaning;
     private bool timerGoing;
+    
 
     private float _timerValue;
 
@@ -53,7 +54,7 @@ public class TimerController : MonoBehaviour
             if (_timerValue <= 0)
             {
                 EndTimer();
-                FindObjectOfType<GameManager>().GameOver();
+                FindObjectOfType<PlayerStatus>().TakeDamage(100);
             }
 
         }
