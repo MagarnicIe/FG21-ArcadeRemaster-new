@@ -24,7 +24,7 @@ public class Weapons : MonoBehaviour
     {
         atkCooldown -= Time.deltaTime;
         
-        Vector3 fireDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        /*Vector3 fireDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
 
         if (fireDirection.x<transform.position.x)
         {
@@ -33,7 +33,7 @@ public class Weapons : MonoBehaviour
         else
         {
             transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
-        }
+        }*/
 
        
         if (Input.GetMouseButtonDown(0)) //left mouse button
@@ -51,7 +51,6 @@ public class Weapons : MonoBehaviour
     {
         if (atkCooldown <= 0)
         {
-            // GameObject bullet = Instantiate(bulletPrefab, fireDirection.position, fireDirection.rotation); //spawns the bullet  
             GameObject bullet = Instantiate(bulletPrefab, firePoint.position, firePoint.rotation); //spawns the bullet   
             Destroy(bullet, 1); //destroys the bullet after 1sec.
             atkCooldown = atkSpeed;

@@ -8,14 +8,17 @@ public class EnemyRanged : Enemy
 {
     public GameObject enemyProjectile;
     public Transform fireDirection;
+    
+    
 
     public override void Update()
     {
         atkCooldown -= Time.deltaTime;
         if (atkCooldown <= 0)
         {
-            Instantiate(enemyProjectile, fireDirection.position, transform.rotation);
+            Instantiate(enemyProjectile, fireDirection.position, fireDirection.rotation);
             atkCooldown = atkSpeed;
+            
         }
         
     }

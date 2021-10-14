@@ -7,6 +7,11 @@ using UnityEngine;
 public class EnemyProjectile : PlayerProjectile
 {
     
+    private void Update()
+    {
+        transform.Translate(Vector2.right*speed*Time.deltaTime, Space.Self);
+    }
+    
     private void OnTriggerEnter2D(Collider2D hitInfo) //stores target information when colliding with enemy.
     {
         PlayerStatus player = hitInfo.GetComponent<PlayerStatus>();
