@@ -15,24 +15,21 @@ public class EnemyRanged : Enemy
 
     public override void Update()
     {
-        float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        atkCooldown -= Time.deltaTime;
-        if (atkCooldown <= 0)
+        if (player != null)
         {
-            if (distanceFromPlayer < lineOfSite)
+            float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
+            atkCooldown -= Time.deltaTime;
+            if (atkCooldown <= 0)
             {
-               GameObject enemyProjectiles = Instantiate(enemyProjectile, fireDirection.position, fireDirection.rotation);
-                Destroy(enemyProjectiles, 3); //destroys the bullet after 1sec.
-            }
-            
-            
-            atkCooldown = atkSpeed;
-        }
+                if (distanceFromPlayer < lineOfSite)
+                {
+                    GameObject enemyProjectiles = Instantiate(enemyProjectile, fireDirection.position, fireDirection.rotation);
+                    Destroy(enemyProjectiles, 3); //destroys the bullet after 1sec.
+                }
 
-        void OnDrawGizmos()
-        {
-            Gizmos.color = Color.blue;
-            Gizmos.DrawWireSphere(transform.position, lineOfSite);
+                atkCooldown = atkSpeed;
+            }
+
         }
         
     }

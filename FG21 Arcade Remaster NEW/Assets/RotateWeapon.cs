@@ -11,6 +11,7 @@ public class RotateWeapon : MonoBehaviour
     
     void Update()
     {
+        
         Vector3 mousepos = Input.mousePosition;
         Vector3 weaponPosition = Camera.main.WorldToScreenPoint(transform.position);
         mousepos.x = mousepos.x - weaponPosition.x;
@@ -26,4 +27,6 @@ public class RotateWeapon : MonoBehaviour
             transform.rotation = Quaternion.Euler(new Vector3(0f, 0f, weaponAngle));
         }
     }
+    
+    
 } 
