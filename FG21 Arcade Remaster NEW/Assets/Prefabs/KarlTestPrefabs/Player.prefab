@@ -322,6 +322,10 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
+  enemyCheck: {fileID: 6106924859291894957}
+  enemyLayer:
+    serializedVersion: 2
+    m_Bits: 512
   MovementSpeed: 15
   wallLayer:
     serializedVersion: 2
