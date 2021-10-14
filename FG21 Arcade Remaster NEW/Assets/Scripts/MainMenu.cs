@@ -11,7 +11,7 @@ public class MainMenu : MonoBehaviour
       SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //will load the next scene in queue.
    }
 
-   public void doExitGame()
+   public void ExitGame()
    {
       Application.Quit(); //will shut down the game when built.
        
