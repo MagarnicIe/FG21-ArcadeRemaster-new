@@ -6,20 +6,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   public void StartGame()
-   {
-      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //will load the next scene in queue.
-   }
+    public void StartGame()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1); //will load the next scene in queue.
 
-   public void doExitGame()
-   {
-      Application.Quit(); //will shut down the game when built.
-       
-   }
-   
-   public void RestartGame()
-   {
-     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1); //will repeat current scene.
-   }
-   
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit(); //will shut down the game when built.
+        Debug.Log("Exiting game..."); //temp debug to test menu exiting function. Should be deleted before final build.
+    }
+
+    public void RestartGame()
+    {
+        Debug.Log("Restarting");
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1); //will load the next scene in queue -1
+                                                                              //SceneManager.LoadScene(("Karl Scene"));
+
+    }
+
+    public void VicRestart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+    }
 }
