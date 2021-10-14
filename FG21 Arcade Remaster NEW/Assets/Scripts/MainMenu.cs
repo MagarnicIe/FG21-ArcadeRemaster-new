@@ -21,5 +21,10 @@ public class MainMenu : MonoBehaviour
    {
      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1); //will repeat current scene.
    }
+
+   public void RestartVic()
+   {
+      SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -2); //will repeat current scene.
+   }
    
 }
