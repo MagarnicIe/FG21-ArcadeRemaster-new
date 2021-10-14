@@ -12,7 +12,7 @@ public class PlayerScore : MonoBehaviour
         
     
     private int _winConditionKills = 20; //temp
-    private int _winConditionCollects = 5;
+    private int _winConditionCollects = 10;
    
     public Text killCountLog;
     public Text collectCountLog;
