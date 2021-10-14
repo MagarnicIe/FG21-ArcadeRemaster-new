@@ -61,7 +61,7 @@ public  class PlayerMovementsTest : MonoBehaviour
             }
 
             if (onEnemy)
-                Jump();
+                doubleJump = true;
 
         }
         
