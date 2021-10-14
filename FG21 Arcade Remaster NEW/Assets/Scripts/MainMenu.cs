@@ -19,8 +19,8 @@ public class MainMenu : MonoBehaviour
    
    public void RestartGame()
    {
-     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1); //will load the next scene in queue -1
-     //SceneManager.LoadScene(("Karl Scene"));
+     SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex -1); //will repeat current scene.
+     
    }
    
 }
