@@ -14,10 +14,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FINAL.unity
     guid: 9b485a6a823501c458c89695f9bd49b3
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 29896a4f97c038c4280f6590d934400e
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Victory.unity
     guid: cf55344ed4f73954b90c1214842673fe
   - enabled: 0
@@ -26,7 +26,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/Damon Test.unity
     guid: 0799fa3fef5f76c43bd22db8e304457d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Victory Pacifist.unity
     guid: 861ccbccf1fb46c46a27a1c6ee50c564
   m_configObjects: {}
