@@ -38,10 +38,14 @@ public class PlayerScore : MonoBehaviour
             _scoreCount +=100;
             _collectCount++;
             UpdateGUI();
-
-            if (_collectCount >= _winConditionCollects && _killCount >= _winConditionKills) 
+            
+            if (_collectCount >= _winConditionCollects && _killCount <= 0) 
             {
-                //FindObjectOfType<GameManager>().VictoryPacifist();
+                FindObjectOfType<GameManager>().VictoryPacifist();
+            }
+
+            if (_collectCount >= _winConditionCollects) 
+            {
                 FindObjectOfType<GameManager>().Victory();
             }
         }
@@ -54,7 +58,7 @@ public class PlayerScore : MonoBehaviour
         _killCount++;
         UpdateGUI();
         
-        if (_collectCount >= _winConditionCollects && _killCount >= _winConditionKills) 
+        if (_killCount >= _winConditionKills) 
         {
             FindObjectOfType<GameManager>().Victory();
         } 
