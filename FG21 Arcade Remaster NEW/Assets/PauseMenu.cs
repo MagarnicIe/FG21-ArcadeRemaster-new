@@ -38,14 +38,9 @@ public class PauseMenu : MonoBehaviour
         Time.timeScale = 0f;
         GameIsPaused = true;
     }
-
-    public void MainMenu()
-    {
-        //load mainmenu scene
-    }
-
+    
     public void Exit()
     {
-        //quit app
+        Application.Quit();
     }
 }
