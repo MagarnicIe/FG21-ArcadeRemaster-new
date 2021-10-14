@@ -18,12 +18,15 @@ public  class PlayerMovementsTest : MonoBehaviour
     public float checkRadius;
     public Transform groundCheck;
     public LayerMask groundLayer;
+    public Transform enemyCheck;
+    public LayerMask enemyLayer;
     
     [SerializeField] private float MovementSpeed;
     private bool doubleJump;
     public LayerMask wallLayer;
     private float movement = 0f;
     private bool isTouchingWall;
+    private bool onEnemy;
     public Transform wallCheck;
     private bool wallSliding;
     public float wallSlidingSpeed;
@@ -38,6 +41,8 @@ public  class PlayerMovementsTest : MonoBehaviour
     
     void Update()
     {
+        onEnemy = Physics2D.OverlapCircle(enemyCheck.position, checkRadius, enemyLayer);
+        
         if (Input.GetKeyDown(KeyCode.Space))
         {
             if (isGrounded)
@@ -55,6 +60,9 @@ public  class PlayerMovementsTest : MonoBehaviour
                 doubleJump = true;
             }
 
+            if (onEnemy)
+                doubleJump = true;
+
         }
         
     }
@@ -63,6 +71,7 @@ public  class PlayerMovementsTest : MonoBehaviour
     {
 
        isTouchingWall = Physics2D.OverlapCircle(wallCheck.position, checkRadius, wallLayer);
+      
 
        animator.SetFloat("MovementSpeed", Mathf.Abs(movement));
 
