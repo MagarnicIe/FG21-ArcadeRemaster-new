@@ -51,15 +51,18 @@ public class Enemy : MonoBehaviour
             if (atkCooldown <= 0)
             {
                 player.GetComponent<PlayerStatus>().TakeDamage(damage);
-                Instantiate(hitEffect, player.transform.position, transform.rotation);
+                GameObject hitEffects = Instantiate(hitEffect, player.transform.position, transform.rotation);
+                Destroy(hitEffects, 3);
                 atkCooldown = atkSpeed;
+                
             }
         }
     }
     
     public void Die()
     {
-        Instantiate(deathEffect, transform.position, Quaternion.identity);
+        GameObject deathEffects = Instantiate(deathEffect, transform.position, Quaternion.identity);
+        Destroy(deathEffects, 3);
         Destroy(gameObject);
     }
     

@@ -25,7 +25,7 @@ public class Weapons : MonoBehaviour
     {
         atkCooldown -= Time.deltaTime;
         
-        /*Vector3 fireDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        /*Vector3 fireDirection = Camera.main.ScreenToWorldPoint(Input.mousePosition); //turns model to mousepos testing.
 
         if (fireDirection.x<transform.position.x)
         {
@@ -34,7 +34,7 @@ public class Weapons : MonoBehaviour
         else
         {
             transform.eulerAngles = new Vector3(transform.rotation.x, 0f, transform.rotation.z);
-        }*/
+        } */
 
        
         if (Input.GetMouseButtonDown(0)) //left mouse button
@@ -60,23 +60,26 @@ public class Weapons : MonoBehaviour
 
     void Melee()
     {
-        //animator.SetTrigger("Melee"); animation trigger used for future animation when striking. 
-        Collider2D[] meleeHitEnemies = Physics2D.OverlapCircleAll(fireDirection.position, meleeRange, enemyLayers);
-        
-
-        foreach (Collider2D enemy in meleeHitEnemies)
+        if (atkCooldown <= 0)
         {
-            enemy.GetComponent<Enemy>().TakeDamage(meleeDmg);
-            Animator.StringToHash("Attacking");
-            Instantiate(meleeSlashEffect, enemy.transform.position, transform.rotation);
+            Collider2D[] meleeHitEnemies = Physics2D.OverlapCircleAll(fireDirection.position, meleeRange, enemyLayers);
+
+            foreach (Collider2D enemy in meleeHitEnemies)
+            {
+                enemy.GetComponent<Enemy>().TakeDamage(meleeDmg);
+
+                GameObject splash = Instantiate(meleeImpactEffect, enemy.transform.position, transform.rotation);
+                Destroy(splash, 1);
+            }
             
-            Instantiate(meleeImpactEffect, enemy.transform.position, transform.rotation);
-            
+            GameObject slash = Instantiate(meleeSlashEffect, fireDirection.transform.position, transform.rotation);
+            Destroy(slash, 1);
+            atkCooldown = atkSpeed;
         }
-        
-        Instantiate(meleeSlashEffect, fireDirection.transform.position, transform.rotation);
-        
-       }
+    }
+
+
+
 
     private void OnDrawGizmosSelected()
     {

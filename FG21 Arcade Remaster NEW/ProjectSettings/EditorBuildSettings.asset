@@ -21,6 +21,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Victory.unity
     guid: cf55344ed4f73954b90c1214842673fe
   - enabled: 0
+    path: Assets/Scenes/Karl Scene.unity
+    guid: ee1a3777ad88bba4ca78e4942cce1a97
+  - enabled: 0
+    path: Assets/Scenes/Damon Test.unity
+    guid: 0799fa3fef5f76c43bd22db8e304457d
+  - enabled: 1
     path: Assets/Scenes/Victory Pacifist.unity
     guid: 861ccbccf1fb46c46a27a1c6ee50c564
   m_configObjects: {}

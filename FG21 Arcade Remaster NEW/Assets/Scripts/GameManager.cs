@@ -8,7 +8,7 @@ public class GameManager : MonoBehaviour
 {
    private bool gameIsOver = false; //default to false to access method as soon as we die.
 
-   public float restartDelay = 3f;
+   public float restartDelay = 0.01f;
 
    //private bool gamePlaying;
    

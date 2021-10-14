@@ -18,7 +18,9 @@ public class EnemyProjectile : PlayerProjectile
         if (player != null) //if enemy does exist then damage the enemy with damage and do an effect at bullet impact.
         {
             player.TakeDamage(damage);
-            Instantiate(impactEffect, transform.position, transform.rotation);
+            GameObject impactEffects = Instantiate(impactEffect, transform.position, transform.rotation);
+            Destroy(impactEffects, 3);
+            
         }
 
         Destroy(gameObject); //removes the bullet after impact.

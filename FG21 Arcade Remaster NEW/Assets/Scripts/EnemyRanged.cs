@@ -16,9 +16,10 @@ public class EnemyRanged : Enemy
         atkCooldown -= Time.deltaTime;
         if (atkCooldown <= 0)
         {
-            Instantiate(enemyProjectile, fireDirection.position, fireDirection.rotation);
-            atkCooldown = atkSpeed;
+            GameObject enemyProjectiles = Instantiate(enemyProjectile, fireDirection.position, fireDirection.rotation);
+            Destroy(enemyProjectiles, 3); //destroys the bullet after 1sec.
             
+            atkCooldown = atkSpeed;
         }
         
     }
